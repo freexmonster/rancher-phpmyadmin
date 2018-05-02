@@ -4,24 +4,44 @@
   description: |
     Run phpMyAdmin for Rancher repo.
   questions:
-    - variable: PMA_HOST
-      label: "MySQL Host"
+    - variable: PMA_HOSTS
+      label: "Host names of the MySQL servers"
       type: string
-      default: localhost
+      default:
       required: false
     - variable: PMA_USER
       label: "MySQL User"
       type: string
       required: false
       description: "Set a MySQL User"
+    - variable: PMA_PORT
+      label: "Port of the MySQL server"
+      type: int
+      default: 3306
+    - variable: PMA_PASSWORD
+      label: "Password for MySQL User"
+      type: password
+      required: false
+      required: false
     - variable: WEB_PORT
       label: "Web interface port phpMyAdmin"
       type: int
       default: 9090
       required: false
-    - variable: PMA_PASSWORD
-      label: "Password for MySQL User"
-      type: password
+    - variable: PMA_ARBITRARY
+      label: "When set to connection to the arbitrary server will be allowed"
+      type: boolean
+      required: true
+      default: true
+    - variable: PMA_VERBOSES
+      label: "Separated list of verbose names of the MySQL servers"
+      type: string
+      default:
+      required: false
+    - variable: PMA_ABSOLUTE_URI
+      label: "User-facing URI"
+      type: string
+      default:
       required: false
 
 version: '2'

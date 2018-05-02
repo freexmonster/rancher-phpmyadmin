@@ -1,5 +1,5 @@
 ---
-name: Rancher-phpmyadmin
+name: rancher-phpmyadmin
 description: |
   Run phpMyAdmin for Rancher repo.
 version: v1.0.0
