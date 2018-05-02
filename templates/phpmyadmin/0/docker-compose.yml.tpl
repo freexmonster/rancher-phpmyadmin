@@ -3,7 +3,7 @@ version: '2'
     image: phpmyadmin/phpmyadmin:latest
     container_name: phpmyadmin
     ports:
-      - 8090:80
+      - '${WEB_PORT}':80
     environment:
       - PMA_HOST='${PMA_HOST}'
       - PMA_USER='${PMA_USER}'
