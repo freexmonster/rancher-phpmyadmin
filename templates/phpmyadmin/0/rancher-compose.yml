@@ -17,8 +17,8 @@
     - variable: WEB_PORT
       label: "Web interface port phpMyAdmin"
       type: int
+      default: 8080
       required: false
-      description: "Set a MySQL User"
     - variable: PMA_PASSWORD
       label: "Password for MySQL User"
       type: password
