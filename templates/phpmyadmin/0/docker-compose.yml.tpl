@@ -10,8 +10,8 @@ services:
       {{- if ne .Values.PMA_HOSTS ""}}
       - PMA_HOSTS='${PMA_HOSTS}'
       {{- end}}
-      {{- if ne .Values.PMA_PORT ""}}
-      - PMA_PORT='${PMA_PORT}'
+      {{- if ne .Values.PMA_PORTS ""}}
+      - PMA_PORT='${PMA_PORTS}'
       {{- end}}
       {{- if ne .Values.PMA_USER ""}}
       - PMA_USER='${PMA_USER}'

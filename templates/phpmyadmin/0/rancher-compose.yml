@@ -13,9 +13,9 @@
       type: string
       required: false
       description: "Set a MySQL User"
-    - variable: PMA_PORT
-      label: "Port of the MySQL server"
-      type: int
+    - variable: PMA_PORTS
+      label: "Separated list of ports of the MySQL servers"
+      type: string
       default: 3306
     - variable: PMA_PASSWORD
       label: "Password for MySQL User"
