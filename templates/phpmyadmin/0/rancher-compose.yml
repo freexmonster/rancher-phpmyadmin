@@ -7,7 +7,6 @@
     - variable: PMA_HOSTS
       label: "Host names of the MySQL servers"
       type: string
-      default:
       required: false
     - variable: PMA_USER
       label: "MySQL User"
@@ -22,7 +21,6 @@
       label: "Password for MySQL User"
       type: password
       required: false
-      required: false
     - variable: WEB_PORT
       label: "Web interface port phpMyAdmin"
       type: int
@@ -36,12 +34,10 @@
     - variable: PMA_VERBOSES
       label: "Separated list of verbose names of the MySQL servers"
       type: string
-      default:
       required: false
     - variable: PMA_ABSOLUTE_URI
       label: "User-facing URI"
       type: string
-      default:
       required: false
 
 version: '2'
