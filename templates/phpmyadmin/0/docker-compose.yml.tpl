@@ -1,4 +1,6 @@
 version: '2'
+
+services:
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
     container_name: phpmyadmin
