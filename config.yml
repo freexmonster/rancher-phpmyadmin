@@ -1,0 +1,10 @@
+---
+name: Rancher-phpmyadmin
+description: |
+  Run phpMyAdmin for Rancher repo.
+version: v1.0.0
+category: Applications
+maintainer: Gues Ruslan <freexmonster@yandex.ru>
+projectURL: https://github.com/freexmonster/rancher-phpmyadmin
+labels:
+  io.rancher.orchestration.supported: 'cattle,swarm'

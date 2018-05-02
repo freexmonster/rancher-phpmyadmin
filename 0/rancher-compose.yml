@@ -1,0 +1,27 @@
+.catalog:
+  name: "Rancher-phpMyAdmin"
+  version: "v1.0.0"
+  description: |
+    Run phpMyAdmin for Rancher repo.
+  questions:
+    - variable: PMA_HOST
+      label: "MySQL Host"
+      type: string
+      default: localhost
+      required: false
+    - variable: PMA_USER
+      label: "MySQL User"
+      type: string
+      required: false
+      description: "Set a MySQL User"
+    - variable: PMA_PASSWORD
+      label: "Password for MySQL User"
+      type: password
+      required: false
+
+version: '2'
+services:
+  phpmyadmin:
+    scale: 1
+    start_on_create: true
+    retain_ip: true
