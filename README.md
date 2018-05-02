@@ -1,6 +1,7 @@
 # rancher-phpmyadmin
-![Alt text](./controllers_brief.svg)
+![](./controllers_brief.svg)
 <img src="./rancher-phpmyadmin.svg">
+
     Run phpMyAdmin for Rancher repo.
 
 
