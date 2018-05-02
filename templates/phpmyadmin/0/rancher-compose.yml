@@ -30,7 +30,7 @@
       label: "When set to connection to the arbitrary server will be allowed"
       type: boolean
       required: true
-      default: true
+      default: false
     - variable: PMA_VERBOSES
       label: "Separated list of verbose names of the MySQL servers"
       type: string
